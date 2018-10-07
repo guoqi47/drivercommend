@@ -1,6 +1,6 @@
-from model.Enroll import *
-from dao.EnrollDao import EnrollDao
-from dao.EnrollDao import Enroll
+from model.Recommend import *
+from dao.RecommendDao import RecommendDao
+# from  import Enroll
 # EnrollDao(Enroll).get1()
 
 # from dao.DriverNoDao import DriverNo
@@ -8,6 +8,10 @@ from dao.EnrollDao import Enroll
 # driverIds=[2,3]
 # print DriverNoDao(DriverNo).getIdcard(driverIds).__len__()
 
-from dao.ActivityMapDao import ActivityMapDao
-from model.ActivityMap import ActivityMap
-print ActivityMapDao(ActivityMap).getList([2,3])
+from dao.EnrollDao import EnrollDao
+from model.Enroll import Enroll
+RecommendDao(Recommend).addRecommand(2,3)
+
+
+
+
